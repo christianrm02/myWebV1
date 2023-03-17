@@ -1,0 +1,234 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111111;
+  color: #cccccc;
+  font-family: Karla, sans-serif;
+  font-size: 20px;
+  text-justify: inter-word;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intContainer {
+    background-color: black;
+    color: yellow;
+    font-family: Karla, sans-serif;
+}
+
+#introButton {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff8000;
+    transition: color 0.9s ease; /*para hacer  la transición suave*/
+    border-bottom: 1px solid transparent; /* Establecer el subrayado como transparente */
+    transition: color 0.9s ease, border-bottom 0.6s ease; /* Agregar transición para color y subrayado */
+}
+
+#introButton:hover {
+  color: #ff8000; /* Cambiar el color del texto al pasar el ratón */
+  border-bottom: 1px solid #ff8000; /* Mostrar el subrayado al pasar el ratón */
+}
+
+#emote_guiño {
+    width:24px;
+    height:24px;
+}
+
+/*----------------Main-------------------*/
+.all {
+    display: flex;
+}
+
+.lateralOptOut {
+    position: fixed;
+    background-color: black;
+    height: 100%; /*lo de vh es el viewport altura y el vw para la anchura, y el número el porcentaje que quieras ocupar*/
+    max-width: 400px;
+    width: 250px;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.lateralOptIn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+   /* display: block;*/
+}
+
+hr {
+    size: 1px;
+    border-bottom: 0.5px solid white;
+}
+
+.title_menu {
+  color: #ff8000;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ff8000;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align:center;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu_option {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.block_content {
+    /*color: #ffffff;
+    width: 77% ;
+
+    display: flex;
+    flex-flow: column wrap;*/
+    width: 77%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 250px;
+
+}
+
+.bloque {
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted white;
+
+    display: flex;
+    align-items: center; /* centra verticalmente */
+    justify-content: center;
+
+    margin: 0 auto;
+    padding: 20px;
+      box-sizing: border-box;
+      padding: 20px;
+        box-sizing: border-box;
+        background-color: green;
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+}
+
+.mi_parrafo{
+    font-size: 20px;
+    color: white;
+}
+
+.titulo_content {
+    color: #ff8000;
+}
+
+.content{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-left: 5px;
+    line-height: 1.5;
+    width: min(77%, 1000px);
+}
+
+/*--------------*/
+.contenedor_bloques_flotantes {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flexwrap: nowrap;
+}
+
+.float-block {
+  max-width: 300px;
+  max-height: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  float: left;
+  margin-right: 20px;
+}
+.float-block h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.float-block p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.float-block a {
+  display: block;
+  font-size: 0.8rem;
+  color: #333;
+  text-decoration: none;
+}
+
+
+/*-----------------*/
+.social_wrap {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  margin-top: 60px;
+}
+
+div {
+  display: block;
+}
+
+#linkedin_link {
+    height: 90%;
+    width: 90%;
+}
+
+#gmail_link {
+    height: 70%;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
