@@ -63,6 +63,7 @@ a {
     top: 0;
     left: 0;
     padding: 20px;
+    width: 15%;
 }
 
 .lateralOptIn {
@@ -113,12 +114,11 @@ li {
 
     display: flex;
     flex-flow: column wrap;*/
-    width: 77%;
+    width: 90%;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      margin-left: 250px;
-
+      align-items: flex-end;
+      margin-left: 15%;
 }
 
 .bloque {
@@ -129,22 +129,18 @@ li {
 
     display: flex;
     align-items: center; /* centra verticalmente */
-    justify-content: center;
+    justify-content:center;
 
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
-      box-sizing: border-box;
-      padding: 20px;
-        box-sizing: border-box;
-        background-color: green;
-        max-width: 100%;
-        max-height: 100%;
-        overflow: auto;
+    box-sizing: border-box;
+    background-color: green;
+    overflow: auto;
 }
 
 .mi_parrafo{
     font-size: 20px;
-    color: white;
+    color: #cccccc;
 }
 
 .titulo_content {
@@ -154,11 +150,8 @@ li {
 .content{
     text-align: justify;
     text-justify: inter-word;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-left: 5px;
     line-height: 1.5;
-    width: min(77%, 1000px);
+    width: min(80%, 1000px);
 }
 
 /*--------------*/
@@ -169,7 +162,6 @@ li {
     flex-wrap: wrap;
     background-color: red;
     margin-bottom: 30px;
-
 }
 
 .float-block {
@@ -201,7 +193,7 @@ li {
 .image_proj {
     width: 95%;
     align-items: stretch;
-        justify-content: stretch;
+    justify-content: stretch;
 }
 .float-block p {
   font-size: 1rem;
@@ -216,16 +208,43 @@ li {
 
 .código {
     font-style: bold;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #cccccc;
 }
 
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+
+}
+
+.row_form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#email {
+    width: 370px;
+    font-size: 20px;
+}
+
+#description{
+    width: 1000px;
+    heigth: 20px;
+    font-size: 20px;
+}
 
 /*-----------------*/
 .social_wrap {
   justify-content: space-around;
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #cccccc;
   padding: 5px;
   margin-top: 60px;
 }
