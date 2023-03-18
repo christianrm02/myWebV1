@@ -217,9 +217,15 @@ li {
     margin-bottom: 10px;
 }
 
+#email {
+    minlength: "1";
+    maxlength: "50";
+}
+
 #env_bottom {
     font-style: bold;
     font-size: 18px;
+    margin-top: 10px;
 }
 
 #email {

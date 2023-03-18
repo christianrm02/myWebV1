@@ -21,9 +21,9 @@
             <hr />
             <li><a class="menu_option" href="#bloque3">En proceso</a></li>
             <hr />
-            <li><a class="menu_option" href="#">Decisivo</a></li>
+            <li><a class="menu_option" href="#bloque3">Skills</a></li>
             <hr />
-            <li><a class="menu_option" href="#">Contacto</a></li>
+            <li><a class="menu_option" href="#bloque4">Contacto</a></li>
           </ul>
         </nav>
 
@@ -86,12 +86,13 @@
       <div class="bloque" id="bloque4">
         <div class="content">
           <h2 class="titulo_content">Contacto</h2>
-            <form class="form-container">
+            <form class="form-container" method='POST' action='enviar_correo.php'>
 
+                <p>Indica tu correo electrónico y tu motivo de contacto e intentaré ponerme en contacto en cuanto pueda!</p>
                 <label class="inp" for="email">Correo electrónico:</label>
-                <input class="inp" type="email" id="email" name="email">
+                <input class="inp" type="email" id="email" name="email" placeholder="elonmusk@example.com" required minlength="1" maxlength="50">
                 <label class="inp" for="description">Descripción:</label>
-                <textarea class="inp" id="description" name="description" rows="6"></textarea>
+                <textarea class="inp" id="description" name="description" rows="6" placeholder="Nos gustaría ponernos en contacto contigo porque..."></textarea>
                 <input class="inp" type="submit" value="Enviar" id="env_bottom">
 
             </form>
