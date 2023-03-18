@@ -22,19 +22,20 @@ const observer = new IntersectionObserver((entries) => {
       else if(entry.target.id == "css") entry.target.classList.add('cssvisible');
       else if(entry.target.id == "js") entry.target.classList.add('jsvisible');
 
-      else if(entry.target.id == "esp") entry.target.classList.add('espvisible');
+      if(entry.target.id == "esp") entry.target.classList.add('espvisible');
       else if(entry.target.id == "cat") entry.target.classList.add('catvisible');
       else if(entry.target.id == "ing") entry.target.classList.add('ingvisible');
       else if(entry.target.id == "fr") entry.target.classList.add('frvisible');
       else if(entry.target.id == "jp") entry.target.classList.add('jpvisible');
-    } else {
+    }
+    else {
       if(entry.target.id == "cmas") entry.target.classList.remove('cmasvisible');
       else if(entry.target.id == "java") entry.target.classList.remove('javavisible');
       else if(entry.target.id == "html") entry.target.classList.remove('htmlvisible');
       else if(entry.target.id == "css") entry.target.classList.remove('cssvisible');
       else if(entry.target.id == "js") entry.target.classList.remove('jsvisible');
 
-      else if(entry.target.id == "esp") entry.target.classList.remove('espvisible');
+      if(entry.target.id == "esp") entry.target.classList.remove('espvisible');
       else if(entry.target.id == "cat") entry.target.classList.remove('catvisible');
       else if(entry.target.id == "ing") entry.target.classList.remove('ingvisible');
       else if(entry.target.id == "fr") entry.target.classList.remove('frvisible');
@@ -54,6 +55,41 @@ observer.observe(document.querySelector('#cat'));
 observer.observe(document.querySelector('#ing'));
 observer.observe(document.querySelector('#fr'));
 observer.observe(document.querySelector('#jp'));
+
+
+function load() {
+    const darkmode = localStorage.getItem('darkmode');
+
+    if(!darkmode) {
+        store('false');
+    } else if(darkmode == 'true') {
+        body.classList.add('darkmode');
+    }
+}
+
+function store(value) {
+    localStorage.setItem('darkmode', value);
+}
+
+const bdark = document.querySelector('#bdark');
+const body = document.querySelector('body');
+
+/*load();
+
+bdark.addEventListener('click', e => {
+    body.classList.toggle('darkmode');
+    store(body.classList.contains('darkmode'));
+}); */
+
+bdark.addEventListener('click', function() {
+  if (body.classList.contains('light-mode')) {
+    body.classList.remove('light-mode');
+    body.classList.add('dark-mode');
+  } else {
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+  }
+});
 /*
 <span id="edad"></span>
 $('#edad').

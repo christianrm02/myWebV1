@@ -16,6 +16,12 @@ body {
   justify-content: flex-end;
 }
 
+.dark-mode {
+    background-color: red;
+    color: blue;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -49,6 +55,12 @@ a {
     height:24px;
 }
 
+.bright_dark{
+    width:40px;
+    height: 38px;
+    border-radius: 50%;
+}
+
 /*----------------Main-------------------*/
 .all {
     display: flex;
@@ -64,6 +76,7 @@ a {
     left: 0;
     padding: 20px;
     width: 15%;
+    border-right: 1px solid white;
 }
 
 .lateralOptIn {
@@ -216,10 +229,6 @@ h2 {
 .skill {
     padding-top: 10px; /* Add top padding */
     padding-bottom: 10px; /* Add bottom padding */
-}
-
-
-.skill {
     background-color: blue;
 }
 .cmasvisible {
@@ -260,6 +269,8 @@ h2 {
 
 
 .idi{
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
     background-color: green;
 }
 .espvisible{
@@ -277,7 +288,6 @@ h2 {
 .jpvisible{
     animation: filljp 2s forwards;
 }
-
 @keyframes fillesp{
     0%{width: 0;}
     100%{width: 100%;}
@@ -328,11 +338,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-#email {
-    minlength: "1";
-    maxlength: "50";
-}
-
 #env_bottom {
     font-style: bold;
     font-size: 18px;
@@ -356,12 +361,11 @@ h2 {
 
 /*-----------------*/
 .social_wrap {
-  justify-content: space-around;
+  justify-content: flex-start;
   display: flex;
   align-items: center;
-  background-color: white;
   padding: 5px;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 div {
@@ -369,11 +373,6 @@ div {
 }
 
 #linkedin_link {
-    height: 90%;
-    width: 90%;
-}
-
-#gmail_link {
     height: 70%;
     width: 70%;
 }
