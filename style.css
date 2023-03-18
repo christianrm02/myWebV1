@@ -6,7 +6,7 @@ body {
   background-color: #111111;
   color: white;
   font-family: Karla, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-justify: inter-word;
 
   display: flex;
@@ -159,7 +159,7 @@ li {
 }
 
 .float-block {
-  width: 26%;
+  width: 27%;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -204,6 +204,117 @@ li {
     border-bottom: 2px solid white;
 }
 
+/*Skills*/
+h2 {
+    text-align: left;
+}
+.skill_container {
+    background-color: #ddd;
+    width: 100%;
+}
+
+.skill {
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+}
+
+
+.skill {
+    background-color: blue;
+}
+.cmasvisible {
+    animation: fillcmas 2s forwards;
+}
+.javavisible {
+    animation: filljava 2s forwards;
+}
+.htmlvisible {
+    animation: fillhtml 2s forwards;
+}
+.cssvisible {
+    animation: fillcss 2s forwards;
+}
+.jsvisible {
+    animation: filljs 2s forwards;
+}
+@keyframes fillcmas{
+    0%{width: 0;}
+    100%{width: 85%;}
+}
+@keyframes filljava{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+@keyframes fillhtml{
+    0%{width: 0;}
+    100%{width: 60%;}
+}
+@keyframes fillcss{
+    0%{width: 0;}
+    100%{width: 60%;}
+}
+@keyframes filljs{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+
+
+.idi{
+    background-color: green;
+}
+.espvisible{
+    animation: fillesp 2s forwards;
+}
+.catvisible{
+    animation: fillcat 2s forwards;
+}
+.ingvisible{
+    animation: filling 2s forwards;
+}
+.frvisible{
+    animation: fillfr 2s forwards;
+}
+.jpvisible{
+    animation: filljp 2s forwards;
+}
+
+@keyframes fillesp{
+    0%{width: 0;}
+    100%{width: 100%;}
+}
+@keyframes fillcat{
+    0%{width: 0;}
+    100%{width: 95%;}
+}
+@keyframes filling{
+    0%{width: 0;}
+    100%{width: 80%;}
+}
+@keyframes fillfr{
+    0%{width: 0;}
+    100%{width: 10%;}
+}
+@keyframes filljp{
+    0%{width: 0;}
+    100%{width: 10%;}
+}
+
+.noZoom:hover {
+   transform: scale(1);
+}
+
+.caracteristica {
+    font-size: 18px;
+    text-align: left;
+}
+
+.caract{
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/*Contacto*/
 .form-container {
     display: flex;
     align-items: flex-start;
@@ -237,6 +348,10 @@ li {
     width: 100%;
     heigth: 20px;
     font-size: 20px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
 }
 
 /*-----------------*/
