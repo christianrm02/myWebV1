@@ -1,4 +1,45 @@
 //clase= ., id = #
+
+function load() {
+    const lightmode = localStorage.getItem('lightmode');
+
+    if(!lightmode) {
+        store('false');
+    } else if(lightmode == 'true'){
+        body.classList.add('light-mode');
+        img_mode.src = "images/moon.png";
+    }
+}
+
+function store(value) {
+    localStorage.setItem('lightmode', value);
+}
+
+const blight = document.querySelector('.bright_dark_button');
+const body = document.querySelector('body');
+const img_mode = document.querySelector('.bright_dark');
+
+load();
+
+/*blight.addEventListener('click', e => {
+    body.classList.toggle('lightmode');
+    store(body.classList.contains('lightmode'));
+}); */
+
+blight.addEventListener('click', function() {
+  if (body.classList.contains('light-mode')) { //oscuro
+    body.classList.remove('light-mode');
+    body.classList.add('dark-mode');
+    store(false);
+    img_mode.src = "images/sun2.png";
+  } else { //claro
+    body.classList.remove('dark-mode');
+    body.classList.add('light-mode');
+    store(true);
+    img_mode.src = "images/moon.png";
+  }
+});
+
 //intro
 //SABER MI EDAD
 const fechaActual = new Date();
@@ -8,7 +49,7 @@ if(fechaActual.getMonth() < 4 || (fechaActual.getMonth() == 4 && fechaActual.get
 }
 //MOSTRAT TEXTO PRESENTACIÓN
 const typed = new Typed('#mi_parrafo', {
-  strings: [`Buenas! Soy Christian Rivero, actualmente tengo ${edad} años, nací en Barcelona el 20 de abril del 2002 y soy Ingeniero informático, concretamente, de la especialidad de Ingeniería del Software, titulado en la UPC. Desde pequeño me han llamado mucho la atención los ordenadores, las consolas, los diseños de las páginas web, y sobre todo, el porqué de las cosas, me considero una persona muy curiosa y que le gusta aprender y conocer diferentes puntos de vista de todo tipo de persona. Soy trabajador, perfeccionista, perseverante, resolutivo y con capacidad de trabajar en equipo. Si estás leyendo esto es porque o estoy presumiendo de página web (está bien hecha eh <img src="/images/guiño3.png" alt="emoticono guiño" id="emote_guiño"/> ) o estás aquí interesado en mi y en mi portafolio. En ese caso, espero que te sirva esta web para conocerme un poco y más, y si necesitas conocerme mejor, contáctame por privado, puedes encontrar las formas de contacto conmigo clicando <a href="#bloque4" id="enlace">aquí</a>.`],
+  strings: [`Buenas! Soy Christian Rivero, actualmente tengo ${edad} años, nací en Barcelona el 20 de abril del 2002 y soy Ingeniero informático, concretamente, de la especialidad de Ingeniería del Software, titulado en la UPC. Desde pequeño me han llamado mucho la atención los ordenadores, las consolas, los diseños de las páginas web, y sobre todo, el porqué de las cosas, me considero una persona muy curiosa y que le gusta aprender y conocer diferentes puntos de vista de todo tipo de persona. Soy trabajador, perfeccionista, perseverante, resolutivo y con capacidad de trabajar en equipo. Si estás leyendo esto es porque o estoy presumiendo de página web (está bien hecha eh <img src="/images/guiño3.png" alt="emoticono guiño" id="emote_guiño"/> ) o estás aquí interesado en mi y en mi portafolio. En ese caso, espero que te sirva esta web para conocerme un poco y más, y si necesitas conocerme mejor, contáctame por privado desde <a href="#bloque4" id="contacto_ref">aquí</a>.`],
   typeSpeed: 15,
 });
 
@@ -56,40 +97,6 @@ observer.observe(document.querySelector('#ing'));
 observer.observe(document.querySelector('#fr'));
 observer.observe(document.querySelector('#jp'));
 
-
-function load() {
-    const darkmode = localStorage.getItem('darkmode');
-
-    if(!darkmode) {
-        store('false');
-    } else if(darkmode == 'true') {
-        body.classList.add('darkmode');
-    }
-}
-
-function store(value) {
-    localStorage.setItem('darkmode', value);
-}
-
-const bdark = document.querySelector('#bdark');
-const body = document.querySelector('body');
-
-/*load();
-
-bdark.addEventListener('click', e => {
-    body.classList.toggle('darkmode');
-    store(body.classList.contains('darkmode'));
-}); */
-
-bdark.addEventListener('click', function() {
-  if (body.classList.contains('light-mode')) {
-    body.classList.remove('light-mode');
-    body.classList.add('dark-mode');
-  } else {
-    body.classList.remove('dark-mode');
-    body.classList.add('light-mode');
-  }
-});
 /*
 <span id="edad"></span>
 $('#edad').

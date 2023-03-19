@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: #111111;
-  color: white;
+  color: #E8E6E3;
   font-family: Karla, sans-serif;
   font-size: 18px;
   text-justify: inter-word;
@@ -14,22 +14,62 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
+  transition: color 0.5s ease, background-color 0.5s ease, border-bottom 0.5s;
 }
 
-.dark-mode {
-    background-color: red;
-    color: blue;
+.light-mode {
+   background-color: white;
+   color: black;
 }
-
+.light-mode h2{
+   color: #ff8000;
+}
+.light-mode .lateralOptOut{
+   background-color: #f3f3f3;
+   color: black;
+}
+.light-mode .hr{
+   color: #767676;
+}
+.light-mode .menu_option{
+   color: black;
+}
+.light-mode .title_menu{
+    color: #ff8000;
+}
+.light-mode #code1{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.light-mode #code2{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.light-mode #code3{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.light-mode .float-block{
+    background-color: #f3f3f3;
+}
+.light-mode #env_bottom {
+    background: white;
+    color: black;
+    border: 1px solid #767676;
+}
+.light-mode #email {
+    background: #f3f3f3;
+    border: 1px solid #767676;
+}
+.light-mode #description {
+    background: #f3f3f3;
+}
+.light-mode .bloque {
+    border-bottom: 2px dotted #767676;
+}
 
 a {
     text-decoration: none;
-}
-
-.intContainer {
-    background-color: black;
-    color: yellow;
-    font-family: Karla, sans-serif;
 }
 
 #introButton {
@@ -40,13 +80,11 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ff8000;
-    transition: color 0.9s ease; /*para hacer  la transición suave*/
     border-bottom: 1px solid transparent; /* Establecer el subrayado como transparente */
     transition: color 0.9s ease, border-bottom 0.6s ease; /* Agregar transición para color y subrayado */
 }
 
 #introButton:hover {
-  color: #ff8000; /* Cambiar el color del texto al pasar el ratón */
   border-bottom: 1px solid #ff8000; /* Mostrar el subrayado al pasar el ratón */
 }
 
@@ -56,9 +94,8 @@ a {
 }
 
 .bright_dark{
-    width:40px;
-    height: 38px;
-    border-radius: 50%;
+    width: 26px;
+    height: 24px;
 }
 
 /*----------------Main-------------------*/
@@ -76,7 +113,7 @@ a {
     left: 0;
     padding: 20px;
     width: 15%;
-    border-right: 1px solid white;
+    border-right: 1px solid #766E61;
 }
 
 .lateralOptIn {
@@ -88,13 +125,14 @@ a {
 
 hr {
     size: 1px;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid #766E61;
 }
 
 .title_menu {
   color: #ff8000;
   font-size: 25px;
   text-align: center;
+  margin-left: 8px;
   border-bottom: 1px solid #ff8000;
 }
 
@@ -115,7 +153,7 @@ li {
 }
 
 .menu_option {
-    color: #ffffff;
+    color: #E8E6E3;
     font-size: 20px;
 }
 
@@ -129,11 +167,16 @@ li {
     align-content: stretch;
 }
 
+#contacto_ref {
+    color: #ff8000;
+    border-bottom: 1px solid #ff8000;
+}
+
 .bloque {
     height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 2px dotted white;
+    border-bottom: 2px dotted #766E61;
 
     display: flex;
     align-items: center; /* centra verticalmente */
@@ -146,9 +189,8 @@ li {
     width: 100%;
 }
 
-#enlace {
-    color: #ff8000;
-    border-bottom: 1px solid #ff8000;
+#bloque4 { /*El ultimo bloque no quiero que tenga la separación*/
+    border: none;
 }
 
 .titulo_content {
@@ -174,8 +216,8 @@ li {
 .float-block {
   width: 27%;
   padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #181a1b;
+  border: 1px solid #766E61;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   float: left;
   margin: 5px;
@@ -187,7 +229,7 @@ li {
   transition: all 0.5s ease;
 }
 .float-block:hover {
-    transform: scale(1.2);
+    transform: scale(1.17);
 }
 .float-block h2 {
   font-size: 1.2rem;
@@ -199,7 +241,7 @@ li {
     width: 95%;
     align-items: stretch;
     justify-content: stretch;
-    border: 2px solid white;
+    border: 1px solid #766E61;
 }
 .float-block p {
   font-size: 1rem;
@@ -212,17 +254,25 @@ li {
   text-decoration: none;
 }
 
-.código {
-    font-style: bold;
-    border-bottom: 2px solid white;
+.codigo{
+     border-bottom: 1px solid #E8E6E3;
 }
-
+/* esto lo tengo que poner porq no sé porque, pero sino no me pone el color en la clase */
+#code1{
+    color: #E8E6E3;
+}
+#code2{
+    color: #E8E6E3;
+}
+#code3{
+    color: #E8E6E3;
+}
 /*Skills*/
 h2 {
     text-align: left;
 }
 .skill_container {
-    background-color: #ddd;
+    background-color: #51585B;
     width: 100%;
 }
 
@@ -252,19 +302,19 @@ h2 {
 }
 @keyframes filljava{
     0%{width: 0;}
-    100%{width: 70%;}
+    100%{width: 65%;}
 }
 @keyframes fillhtml{
     0%{width: 0;}
-    100%{width: 60%;}
+    100%{width: 50%;}
 }
 @keyframes fillcss{
     0%{width: 0;}
-    100%{width: 60%;}
+    100%{width: 50%;}
 }
 @keyframes filljs{
     0%{width: 0;}
-    100%{width: 50%;}
+    100%{width: 40%;}
 }
 
 
@@ -328,8 +378,8 @@ h2 {
 .form-container {
     display: flex;
     align-items: flex-start;
-        flex-direction: column;
-        justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     form-container: wrap;
     width: 100%;
 }
@@ -342,11 +392,14 @@ h2 {
     font-style: bold;
     font-size: 18px;
     margin-top: 10px;
+    background: #3b3b3b;
+    color: #E8E6E3;
 }
 
 #email {
     width: 50%;
     font-size: 20px;
+    background: #3b3b3b;
 }
 
 #description{
@@ -357,6 +410,7 @@ h2 {
     max-width: 100%;
     min-height: 100px;
     max-height: 200px;
+    background: #3b3b3b;
 }
 
 /*-----------------*/
@@ -375,6 +429,8 @@ div {
 #linkedin_link {
     height: 70%;
     width: 70%;
+    border: 1px solid gray;
+    border-radius: 50%;
 }
 
 
