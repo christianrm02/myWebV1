@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Main</title>
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://kit.fontawesome.com/b74f76a043.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,16 +15,17 @@
     </buton>
     <div class="lateralOptOut">
       <div class="lateralOptIn">
-        <h1><a class="title_menu" href="intro.html">CRM</a></h1>
+        <h1><a class="title_menu" href="index.html">CRM</a></h1>
         <nav class="menu">
           <ul>
-            <li><a class="menu_option" href="#bloque1">Sobre mí</a></li>
-            <hr />
-            <li><a class="menu_option" href="#bloque2">Proyectos acabados</a></li>
-            <hr />
-            <li><a class="menu_option" href="#bloque3">Skills</a></li>
-            <hr />
-            <li><a class="menu_option" href="#bloque4">Contacto</a></li>
+            <li><a class="menu_option hover-underline-animation" href="#bloque1">Sobre mí</a></li>
+            <br/>
+            <hr/>
+            <li><a class="menu_option hover-underline-animation" href="#bloque2">Proyectos acabados</a></li>
+            <br/>
+            <li><a class="menu_option hover-underline-animation" href="#bloque3">Skills</a></li>
+<br/>
+            <li><a class="menu_option hover-underline-animation" href="#bloque4">Contacto</a></li>
           </ul>
         </nav>
 
@@ -40,6 +41,28 @@
     <div class="block_content">
       <buton class="bright_dark_button">
         <img src="images/sun2.png" class="bright_dark">
+
+        <label for="theme" class="theme">
+          <label for="theme" class="theme">
+	<span class="theme__toggle-wrap">
+		<input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+		<span class="theme__fill"></span>
+		<span class="theme__icon">
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+			<span class="theme__icon-part"></span>
+		</span>
+	</span>
+          </label>
+        </label>
+
+        <!--<i class="fa-solid fa-brightness"></i>-->
       </buton>
       <div class="bloque" id="bloque1">
         <div class="content">
@@ -56,19 +79,19 @@
               <h2>Documentator</h2>
               <img class="image_proj" src="images/Documentaitor2.png">
               <p>Aplicación de edición y amacenaje de documentos hecha para la asignatura de PROP con Java y Swing en 2022.</p>
-              <a class="codigo" href="https://github.com/christianrm02/Editor-de-documentos" target="_blank" id="code1">Código</a>
+              <a class="codigo" href="https://github.com/christianrm02/Editor-de-documentos" target="_blank" id="code1"><i class="fa-brands fa-github"></i></a>
             </div>
             <div class="float-block">
               <h2>myWeb</h2>
               <img class="image_proj" src="images/myWeb1.png">
               <p>Esta propia página, programada desde cero con html, css y javascript. Se aceptan posibles mejoras.</p>
-              <a class="codigo" href="#" target="_blank" id="code2">Código</a>
+              <a class="codigo" href="intro.html" target="_blank" id="code2">CRM</a>
             </div>
             <div class="float-block">
               <h2>EvilJoel</h2>
               <img class="image_proj" src="images/EvilJoel.png">
               <p>PseudoIA programada en C++ para el juego de EDA, consiste en competir con otras IAs por el control del mapa.</p>
-              <a class="codigo" href="#" target="_blank" id="code3">Código</a>
+              <a class="codigo" href="https://github.com/christianrm02/" target="_blank" id="code3"><i class="fa-brands fa-github"></i></a>
             </div>
 
           </div>
@@ -173,8 +196,10 @@
                 <input class="inp" type="email" id="email" name="email" placeholder="elonmusk@example.com" required minlength="1" maxlength="50">
                 <label class="inp" for="description">Mensaje:</label>
                 <textarea class="inp" id="description" name="description" rows="6" placeholder="Nos gustaría ponernos en contacto contigo porque..."></textarea>
-                <input class="inp" type="submit" value="Enviar" id="env_bottom">
-
+                <!--<input class="inp" type="submit" value="Enviar" id="env_bottom">-->
+                <button class="send_form">
+                  <span>Enviar</span>
+                </button>
             </form>
         </div>
       </div>
