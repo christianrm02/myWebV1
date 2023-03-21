@@ -208,15 +208,14 @@ li {
 
 .bloque {
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     border-bottom: 2px dotted #766E61;
 
     display: flex;
     align-items: center; /* centra verticalmente */
     justify-content: center;
 
-    margin: auto;
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
@@ -237,6 +236,8 @@ li {
     text-justify: inter-word;
     line-height: 1.5;
     width: min(80%, 1000px);
+
+    margin-bottom: 100px;
 }
 
 /*--------------*/
@@ -262,6 +263,8 @@ li {
   flex-direction: column;
   justify-content: center;
   transition: all 0.5s ease;
+
+  margin-bottom: 50px;
 }
 .float-block:hover {
     transform: scale(1.17);
@@ -288,6 +291,10 @@ li {
   font-size: 0.8rem;
   color: #333;
   text-decoration: none;
+}
+
+.codigo {
+    margin-top: 25px;
 }
 
 /* esto lo tengo que poner porq no sé porque, pero sino no me pone el color en la clase */
@@ -475,7 +482,7 @@ div {
 .send_form {
  display: inline-block;
  border-radius: 4px;
- background-color: #3d405b;
+ background-color: #515151;
  border: none;
  color: #FFFFFF;
  text-align: center;
