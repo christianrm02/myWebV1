@@ -520,3 +520,19 @@ div {
  opacity: 1;
  right: 0;
 }
+
+/* */
+.image_present {
+    margin: 0;
+    width: 100vw;
+}
+  
+#bloque0 {
+    margin: 0;
+    padding: 0;
+}
+
+#content0 {
+    margin: 0;
+    padding: 0;
+}
